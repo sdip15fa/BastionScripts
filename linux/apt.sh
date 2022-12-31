@@ -22,7 +22,9 @@ CYAN='\033[0;36m'
 
 # Set local variables for use in script
 BASTION_DIR="$HOME/Bastion"
-BASTION_REPO="https://github.com/TheBastionBot/Bastion.git"
+if [ "$BASTION_REPO" = "" ]; then
+BASTION_REPO="https://github.com/TheBastionBot/Bastion.git";
+fi;
 
 # Function to print message from Bastion
 # Params:
